@@ -4,8 +4,13 @@
 
 
 
-Abstract: Identification of virulence factors (VFs) is critical to the elucidation of bacterial pathogenesis and prevention of related infectious diseases. Current computational methods for VF prediction focus on binary classification or involve only several class(es) of VFs with sufficient samples. However, thousands of VF classes are presented in real-world scenarios and many of them only have a very limited number of samples available. 
-In this work we first construct a large VF dataset, covering 3,446 VF classes with 160,495 sequences, and then propose deep convolutional neural network (CNN) models for VF classification. We show that (i) for common VF classes with sufficient samples, our models can achieve the state-of-the-art performance with a precision 0.9868, a recall 0.9783 and a F1-score 0.9803;(ii) for uncommon VFs of divergent dataset, our models can learn transferable features from auxiliary data and achieve good performances with F1-score ranging from 0.9070 to 0.9373 when combining with different predefined features, outperforming traditional classifiers by 1.21\%-15.03\% in F1-score.
+Abstract: Identification of virulence factors (VFs) is critical to the elucidation of bacterial pathogenesis and prevention of related infectious diseases. 
+Current computational methods for VF prediction focus on binary classification or involve only several class(es) of VFs with sufficient samples. 
+However, thousands of VF classes are presented in real-world scenarios and many of them only have a very limited number of samples available. 
+In this work we first construct a large VF dataset, covering 3,446 VF classes with 160,495 sequences, and then propose deep convolutional neural network (CNN) models for VF classification. 
+We show that (i) for common VF classes with sufficient samples, our models can achieve the state-of-the-art performance with a precision 0.9868, a recall 0.9783 and a F1-score 0.9803;
+(ii) for uncommon VFs of divergent dataset, our models can learn transferable features from auxiliary data and achieve good performances with F1-score ranging from 0.9070 to 0.9373 
+when combining with different predefined features, outperforming traditional classifiers by 1.21\%-15.03\% in F1-score.
 
 
 

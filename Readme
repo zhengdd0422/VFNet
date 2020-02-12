@@ -15,12 +15,13 @@ when combining with different predefined features, outperforming traditional cla
 
 
 Datasets (All datasets can be downloaded from "http://www.mgc.ac.cn/VFNet/"):
-    original.fasta                 : Original VFs downloaded from VFDB(http://www.mgc.ac.cn/VFs/) and removed the identical sequences.
-    VFG-2706.fasta + VFG-740.fasta : Expanded VFs by VFanalyzer from NCBI, filtered sequences longer than 2500 amino acids and removed classes with <=3 samples.
-    VFG-2706-1066.fasta            : Removed highly homologous sequences (90% sequence identity) of VFG-2706, filtered classes with <=10 samples.
-    VFG-566.fasta                  : Removed highly homologous sequences (90% sequence identity) of original dataset, filtered classes with <=3 or >10 samples.
-    VFG-2706-iid_train.fasta + VFG-2706-iid_indep.fasta  : VFG-2706-iid(a version of VFG-2706 based on genome information, to do independent testing)
-
+    original                 : Original VFs downloaded from VFDB(http://www.mgc.ac.cn/VFs/) and removed the identical sequences.
+    VFG-2706 + VFG-740 : Expanded VFs by VFanalyzer from NCBI, filtered sequences longer than 2500 amino acids and removed classes with <=3 samples.
+    VFG-2706-1066            : Removed highly homologous sequences (90% sequence identity) of VFG-2706, filtered classes with <=10 samples.
+    VFG-566                  : Removed highly homologous sequences (90% sequence identity) of original dataset, filtered classes with <=3 or >10 samples.
+    COG-755                  : A subset of the database of Clusters of Orthologous Groups of proteins(COGs), used to pretrain models for VFG-566
+    VFG-2706-iid_train + VFG-2706-iid_indep  : VFG-2706-iid(a version of VFG-2706 based on genome information, to do independent testing)
+      
 
 
 Codes:

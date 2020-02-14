@@ -20,7 +20,7 @@ from keras import backend as K
 parser = argparse.ArgumentParser(description='ml_features_classifier')
 parser.add_argument('--feature', type=str, default='aac')   # aac, dpc, ctd, pseaac1, pseaac2, all
 parser.add_argument('--classify', type=str, default='linearsvc')  # LR, DT, RF, svm, linearsvc
-parser.add_argument('--file', type=str, default='VFG-566')
+parser.add_argument('--file', type=str, default='VFG-564')
 parser.add_argument('--signal', type=int, default=13)  # 13, 23, 33, 43, 53
 parser.add_argument('--split_cutoff', type=float, default=0.4)  # 13, 23, 33, 43, 53
 args = parser.parse_args()

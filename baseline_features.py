@@ -4,7 +4,7 @@ import argparse
 import os
 
 parser = argparse.ArgumentParser(description='extract features')
-parser.add_argument('--file', type=str, default='VFG-2706')  # VFG-2706/VFG-740/VFG-2706-1066/VFG-566/COG-755
+parser.add_argument('--file', type=str, default='VFG-2706')  # VFG-2706/VFG-740/VFG-2706-1066/VFG-564/COG-755
 parser.add_argument('--feature', type=str, default='aac')   # aac, dpc, ctd, pseaac1, pseaac2, label
 args = parser.parse_args()
 

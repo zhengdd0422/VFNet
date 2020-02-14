@@ -18,8 +18,8 @@ Datasets (All datasets can be downloaded from "http://www.mgc.ac.cn/VFNet/"):
     original                 : Original VFs downloaded from VFDB(http://www.mgc.ac.cn/VFs/) and removed the identical sequences.
     VFG-2706 + VFG-740 : Expanded VFs by VFanalyzer from NCBI, filtered sequences longer than 2500 amino acids and removed classes with <=3 samples.
     VFG-2706-1066            : Removed highly homologous sequences (90% sequence identity) of VFG-2706, filtered classes with <=10 samples.
-    VFG-566                  : Removed highly homologous sequences (90% sequence identity) of original dataset, filtered classes with <=3 or >10 samples.
-    COG-755                  : A subset of the database of Clusters of Orthologous Groups of proteins(COGs), used to pretrain models for VFG-566
+    VFG-564                  : Removed highly homologous sequences (90% sequence identity) of original dataset, filtered classes with <=3 or >10 samples.
+    COG-755                  : A subset of the database of Clusters of Orthologous Groups of proteins(COGs), used to pretrain models for VFG-564
     VFG-2706-iid_train + VFG-2706-iid_indep  : VFG-2706-iid(a version of VFG-2706 based on genome information, to do independent testing)
       
 
@@ -35,7 +35,7 @@ Codes:
     # VFNet
         VFNet_main.py          : for VFG-2706/VFG-740/VFG2706-1066/COG-755
         VFNet_main_iid.py      : for VFG-2706-iid
-        VFNet_main_VFG-566.py  : for VFG-566
+        VFNet_main_VFG-566.py  : for VFG-564
 
     # other two deep learning models
         VFs_embed_main.py      : 'Embed + CNN + LSTM' model, for VFG-2706
@@ -44,30 +44,30 @@ Codes:
     # VFNet-H, merge VFNet with predefined features(aac/dpc/ctd/pseaac1/pseaac2/all)
         VFNet-H.py             : for VFG-2706/VFG-740/VFG2706-1066/COG-755
         VFNet-H_iid.py         : for VFG-2706-iid
-        VFNet-H_VFG-566.py     : for VFG-566
+        VFNet-H_VFG-564.py     : for VFG-564
 
     # VFNet(TL), transfer the pretrained VFNet model
         VFNet_TL.py            : from VFG-2706 to VFG-740
-        VFNet_TL_VFG-566.py    : from COG-755 to VFG-566
+        VFNet_TL_VFG-564.py    : from COG-755 to VFG-564
 
     # VFNet-H(TL), transfer the pretrained VFNet-H models on predefined features
         VFNet-H_TL.py          : from VFG2706 to VFG740
-        VFNet-H_TL_VFG-566.py  : from COG-755 to VFG-566
+        VFNet-H_TL_VFG-564.py  : from COG-755 to VFG-564
 
 (3) baseline methods
 
     # extract predefined features and save as txt file
-        baseline_features.py            : for VFG-2706/VFG-740/VFG-2706-1066/VFG-566/COG-755
+        baseline_features.py            : for VFG-2706/VFG-740/VFG-2706-1066/VFG-564/COG-755
         baseline_features_iid.py        : for VFG-2706-iid
 
     # convert txt to numpy for baseline methods
-        baseline_feature_convert.py     : for VFG-2706/VFG-740/VFG-2706-1066/VFG-566/COG-755
+        baseline_feature_convert.py     : for VFG-2706/VFG-740/VFG-2706-1066/VFG-564/COG-755
         baseline_feature_convert_iid.py : special for VFG-2706-iid
 
     # baseline classifiers
         baseline_classify.py            : for VFG-2706/VFG-740/VFG-2706-1066/
         baseline_classify_iid.py        : special for VFG-2706-iid
-        baseline_classify_VFG-566.py    : special for VFG-566
+        baseline_classify_VFG-564.py    : special for VFG-564
 
 (4) other files
     word2vec_model_trembl_size_200_gensim : the pretrained word2vec model from [1], used for 'Word2vec + biGRU' model

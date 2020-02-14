@@ -29,7 +29,7 @@ parser.add_argument('--epoch', type=int, default=800)
 parser.add_argument('--nbt', type=int, default=128)
 parser.add_argument('--opt', type=str, default='adam')
 parser.add_argument('--feature', type=str, default='all')  # aac, dpc, ctd, pseaac1, pseaac2, all
-parser.add_argument('--file', type=str, default='VFDB_v4genes_cdhit90_withinclass_lt2500_mt4_lt10')
+parser.add_argument('--file', type=str, default='VFG-564')
 parser.add_argument('--signal', type=int, default=13)  # 13, 23, 33, 43, 53
 parser.add_argument('--gpuid', type=int, default=2)
 parser.add_argument('--pretrain_method', type=str, default="fixnodense") 

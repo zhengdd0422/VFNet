@@ -7,7 +7,7 @@ import os
 from collections import defaultdict
 
 parser = argparse.ArgumentParser(description='VFs data_prepocess')
-parser.add_argument('--file', type=str, default='VFG-2706')  # VFG-740 or VFG-2706, VFG-2706-1066, VFG-566
+parser.add_argument('--file', type=str, default='VFG-2706')  # VFG-740 or VFG-2706, VFG-2706-1066, VFG-564
 parser.add_argument('--process', type=str, default='make_dict')
 parser.add_argument('--length_cutoff', type=int, default=0)
 parser.add_argument('--number_cutoff', type=int, default=0)

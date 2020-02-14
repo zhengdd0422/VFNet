@@ -35,7 +35,7 @@ Codes:
     # VFNet
         VFNet_main.py          : for VFG-2706/VFG-740/VFG2706-1066/COG-755
         VFNet_main_iid.py      : for VFG-2706-iid
-        VFNet_main_VFG-566.py  : for VFG-564
+        VFNet_main_VFG-564.py  : for VFG-564
 
     # other two deep learning models
         VFs_embed_main.py      : 'Embed + CNN + LSTM' model, for VFG-2706

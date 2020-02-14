@@ -24,7 +24,7 @@ parser.add_argument('--epoch', type=int, default=200)
 parser.add_argument('--nbt', type=int, default=128)
 parser.add_argument('--opt', type=str, default='adam')
 parser.add_argument('--feature', type=str, default='aac')  # aac, dpc, ctd, pseaac1, pseaac2, all
-parser.add_argument('--file', type=str, default='VFG-566')
+parser.add_argument('--file', type=str, default='VFG-564')
 parser.add_argument('--signal', type=int, default=13)  # 13, 23, 33, 43, 53
 parser.add_argument('--split_cutoff', type=float, default=0.4)
 args = parser.parse_args()
